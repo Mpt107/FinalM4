@@ -80,8 +80,8 @@ class Carrito {
     finalizarCompra() {
         const mensajeDiv = document.getElementById('mensaje');
         const totalCarrito = document.getElementById('total');
-        alert(`¡Muchas gracias por su compra! El total pagado fue: $${totalCarrito.textContent}`);
-       // mensajeDiv.innerHTML = `¡Muchas gracias por su compra! El total pagado fue: <strong>$${totalCarrito.textContent}</strong>`;
+       // alert(`¡Muchas gracias por su compra! El total pagado fue: $${totalCarrito.textContent}`);
+       mensajeDiv.innerHTML = `¡Muchas gracias por su compra! El total pagado fue: <strong>$${totalCarrito.textContent}</strong>`;
     
         this.productos = [];
         totalCarrito.textContent = '0';
